@@ -1,5 +1,6 @@
-pipeline_template = "Jenkinsfile_gitflow_docker"
-
+jte{
+	pipeline_template = "Jenkinsfile_gitflow_docker"
+}
 libraries{
 	basictools{
 		maventool = "maven 3.6"
@@ -17,4 +18,3 @@ libraries{
 			hotfix = "hotfix"
 		}
 	}
-  utilities{ }}
