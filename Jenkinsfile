@@ -1,12 +1,8 @@
 properties([
 	parameters([
-		choice(choices: 
-		['-', 'feature-start', 'release-start', 'release-direct'], 
-		description: 'start feature or start release. Release-directly builds develop but acts as a release branch!! Build only if not set', name: 'gitflow_action_param'), 
+		choice(choices: ['-', 'feature-start', 'release-start', 'release-direct'], description: 'start feature or start release. Release-directly builds develop but acts as a release branch!! Build only if not set', name: 'gitflow_action_param'), 
 		choice(choices: ['-'], description: '''feature name in case feature-start action selected''', name: 'feature_name'), 
 		choice(choices: ['No', 'Yes'], description: '''Deploy on \'uat\'? ( \'uat\' if release-direct )''', name: 'DEPLOY')])])
-
-
 pipeline {
     agent any 
     
