@@ -4,7 +4,7 @@ jte{
 libraries{
 	basictools{
 		maventool = "maven 3.6"
-		jdktool = 'jdk11-corretto'
+		jdktool = 'jdk11'
 		pom_use_revision = true
 		sonarqube = false
 		junit_save = false
