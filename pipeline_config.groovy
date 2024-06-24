@@ -1,5 +1,6 @@
 jte{
 	pipeline_template = "Jenkinsfile_gitflow_docker"
+	permissive_initialization = True
 }
 
 @merge libraries{	
