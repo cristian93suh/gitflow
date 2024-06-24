@@ -1,16 +1,15 @@
 jte{
 	pipeline_template = "Jenkinsfile_gitflow_docker"
-	permissive_initialization = True
+	permissive_initialization = "True"
+	reverse_library_resolution = "True"
+	allow_scm_jenkinsfile = "False"
+	
 }
 
 @merge libraries{	
 	@override basictools{
 		maventool = "maven"
 		jdktool = 'jdk11'
-		pom_use_revision = false
-		sonarqube = false
-		junit_save = true
-		nodetool = "Node16"
 	}
 	
 	@merge parametrizing {
