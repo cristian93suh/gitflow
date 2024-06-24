@@ -1,8 +1,8 @@
 jte{
 	pipeline_template = "Jenkinsfile_gitflow_docker"
-	permissive_initialization = "True"
-	reverse_library_resolution = "True"
-	allow_scm_jenkinsfile = "False"
+	permissive_initialization = True
+	reverse_library_resolution = True
+	allow_scm_jenkinsfile = False
 	
 }
 
