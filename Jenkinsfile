@@ -1,3 +1,5 @@
+@Library('basictools') _
+@Library('parametrizing') _
 properties([
 	parameters([
 		choice(choices: ['-', 'feature-start', 'release-start', 'release-direct'], description: 'start feature or start release. Release-directly builds develop but acts as a release branch!! Build only if not set', name: 'gitflow_action_param'), 
