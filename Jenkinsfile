@@ -4,7 +4,7 @@ properties([
 		choice(choices: ['-'], description: '''feature name in case feature-start action selected''', name: 'feature_name'), 
 		choice(choices: ['No', 'Yes'], description: '''Deploy on \'uat\'? ( \'uat\' if release-direct )''', name: 'DEPLOY')])])
 
-pipeline {
+node {
     agent any 
     
     tools{
@@ -12,8 +12,6 @@ pipeline {
         maven 'maven'
     }
     
-    
-    stages{
         
         stage("Git Checkout"){
             steps{
@@ -25,5 +23,5 @@ pipeline {
        
         
         
-    }
+    
 }
