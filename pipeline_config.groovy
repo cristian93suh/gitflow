@@ -4,8 +4,8 @@ jte{
 
 @merge libraries{	
 	@override basictools{
-		maventool = "maven 3.6"
-		jdktool = 'jdk8'
+		maventool = "maven"
+		jdktool = 'jdk11'
 		pom_use_revision = false
 		sonarqube = false
 		junit_save = true
