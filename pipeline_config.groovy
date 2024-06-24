@@ -14,10 +14,10 @@ jte{
 	
 	@merge parametrizing {
 		@override branchtype_deployenv {
-			dev = "dockerdev"
-			release = "uat"
-			master = "pro"
-			hotfix = "pro"
+			dev = "develop"
+			release = "release"
+			master = "master"
+			hotfix = "hotfix"
 		}
 	}
 }
